@@ -1,0 +1,15 @@
+# Ignore appsettings.Development.json file
+appsettings.Development.json
+
+# Ignore SQLite database file
+local.db
+
+# Ignore the bin and obj folders (build outputs)
+bin/
+obj/
+
+# Ignore other system files, IDE files
+.idea/
+.vscode/
+*.user
+*.swp
