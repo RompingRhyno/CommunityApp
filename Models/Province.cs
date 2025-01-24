@@ -7,6 +7,7 @@ public class Province
 {
     [Key]
     [StringLength(2)]
+    [Display(Name = "Code")]
     public string? ProvinceCode { get; set; }
     [Display(Name = "Province")]
     public string? ProvinceName { get; set; }

@@ -16,6 +16,14 @@ builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
+//DEBUG BLOCK
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    var cities = dbContext.Cities.ToList();
+    Console.WriteLine($"Number of cities in database: {cities.Count}");
+}
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

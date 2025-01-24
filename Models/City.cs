@@ -7,6 +7,7 @@ namespace CommunityApp.Models;
 public class City
 {
     [Key]
+    [Display(Name = "ID")]
     public int CityId { get; set; }
     [Required]
     [Display(Name = "City")]
